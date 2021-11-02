@@ -18,12 +18,13 @@ const LikeSection = props => {
       >
         <div className='like-section-wrapper'>
           <FontAwesomeIcon icon={faHeart} />
+          <button onClick={() => likePost()}>{numberOfLikes}</button> {/* added onclick */}
         </div>
         <div className='like-section-wrapper'>
           <FontAwesomeIcon icon={faComment} />
         </div>
       </div>
-      <p className='like-number'>{numberOfLikes} likes</p>
+      <p className='like-number'>{numberOfLikes} likes</p> {/* added dynamic numberOfLikes instead of fixed 100 */}
     </div>
   );
 };
