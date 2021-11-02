@@ -20,10 +20,10 @@ const Post = props => {
           src={post.imageUrl}
         />
       </div>
-      {/* Is LikeSection getting all the props it needs to work correctly? */}
+      {/* Is LikeSection getting all the props it needs to work correctly? NOT SURE WHATS NEEDED HERE? .ID?*/}
       <LikeSection likePost={() => likePost(post.id)} />
       {/* Comments also wants its props! */}
-      <Comments comments={post.comments} />
+      <Comments comments={post.comments} /> {/* Added prop */}
     </div>
   );
 };
