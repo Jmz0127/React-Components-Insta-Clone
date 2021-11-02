@@ -11,6 +11,7 @@ import '../src/components/Posts/Posts';
 import '../src/components/SearchBar/SearchBar';
 
 // Import the dummyData
+import './dummy-data';
 import './App.css';
 
 const App = () => {
